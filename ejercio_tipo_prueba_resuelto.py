@@ -1,8 +1,8 @@
 #Ejercicio tipo prueba 3
 import os,time
+from funciones import *
 
-trabajadores = []
-cargos =tuple("CEO",'Desarrollador'," Analista")#0: CEO,1: Desarrollador,2: Analista
+
 while True:
     os.system('cls')
     print('Menú trabajador. ')
@@ -13,19 +13,11 @@ while True:
     opc=int(input('Ingrese una opción: '))
     os.system('cls')
     if opc==1:
-        print('1: REGISTRAR TRABAJADORS')
-        nombre_apellido=input('Ingrese nombre y apellido: ')
-        cargo=int(input('Ingrese cargo(1.CEO 2. Desarrollador 3. Analista): '))
-        sueldo_bruto=int(input('Ingrese suledo bruto: '))
-        desc_salud=int(sueldo_bruto * 7/100)
-        desc_afp=int(sueldo_bruto * 12/100)
-        sueldo_liquido=sueldo_bruto - desc_salud - desc_afp
-        trabajador=[nombre_apellido,cargos[cargo- 1],sueldo_bruto,desc_salud,desc_afp,sueldo_liquido]
-        trabajadores.append(trabajador)
+        Registrar_trabajador()
     elif opc==2:
         pass
     elif opc==3:
         pass
     else:
-        print('Adioos') 
+        Salir()
     time.sleep(3) 
