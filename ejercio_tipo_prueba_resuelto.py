@@ -15,9 +15,9 @@ while True:
     if opc==1:
         Registrar_trabajador()
     elif opc==2:
-        pass
+        Listar_trabajadores()
     elif opc==3:
-        pass
+        Exportar_archivo_txt()
     else:
         Salir()
     time.sleep(3) 
