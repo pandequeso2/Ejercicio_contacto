@@ -2,7 +2,6 @@
 import os,time
 from funciones import *
 
-
 while True:
     os.system('cls')
     print('Menú trabajador. ')
